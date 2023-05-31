@@ -44,7 +44,7 @@ namespace random_guess_number
                 if (angka_input == angka_jawaban) Console.WriteLine("You are right! It's " + angka_jawaban);
                 else if(jml_input == 10) Console.WriteLine("You so bad, the correct number is "+ angka_jawaban);
                 Console.Write("Wanna play again, master? (y/n) : "); response = Console.ReadLine();
-
+                response = response.ToLower();
                 if (response.Equals("y")) play = true;
                 else play = false;
             } while (play);
