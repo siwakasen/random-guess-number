@@ -36,8 +36,8 @@ namespace random_guess_number
                     if (angka_input < 0 || angka_input > 100) Console.WriteLine("Out of range !");
                     else if (angka_jawaban - angka_input < 3 && angka_input < angka_jawaban) Console.WriteLine("So close");
                     else if (angka_input - angka_jawaban < 3 && angka_input > angka_jawaban) Console.WriteLine("So close");
-                    else if (angka_input < angka_jawaban) Console.WriteLine("It's lower");
-                    else if (angka_input > angka_jawaban) Console.WriteLine("It's higher");
+                    else if (angka_input < angka_jawaban) Console.WriteLine("It's too low");
+                    else if (angka_input > angka_jawaban) Console.WriteLine("It's too high");
 
                     jml_input++;
                     if (jml_input < 10 && angka_input != angka_jawaban) Console.ReadKey();
