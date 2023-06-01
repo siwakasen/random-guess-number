@@ -40,12 +40,12 @@ namespace random_guess_number
                     else if (angka_input > angka_jawaban) Console.WriteLine("It's too high");
 
                     jml_input++;
-                    if (jml_input < 10 && angka_input != angka_jawaban) Console.ReadKey();
+                    if (jml_input < 7 && angka_input != angka_jawaban) Console.ReadKey();
 
-                } while (jml_input < 10 && angka_input != angka_jawaban);
+                } while (jml_input < 7 && angka_input != angka_jawaban);
 
                 if (angka_input == angka_jawaban) Console.WriteLine("You are right! It's " + angka_jawaban);     //win lose condition
-                else if(jml_input == 10) Console.WriteLine("You so bad, the correct number is "+ angka_jawaban);
+                else if(jml_input == 7 ) Console.WriteLine("You so bad, the correct number is "+ angka_jawaban);
 
                 Console.Write("Wanna play again, master? (y/n) : "); response = Console.ReadLine();
                 response = response.ToLower();
@@ -55,7 +55,7 @@ namespace random_guess_number
             } while (play); //if play is true, then we back to do above and doing init again
 
             Console.WriteLine("\n\n\t[ Thanks for playing ^_^ ]");
-            Console.WriteLine("\t[ Made by siwakasen a.k.a riksiprnm ]");
+            Console.WriteLine("\t[ Made by siwakasen ]");
 
             Console.ForegroundColor = ConsoleColor.Black; //this is used for making the end of console message to unseen
         }
